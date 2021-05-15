@@ -63,6 +63,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/miatoll/proprietary/system_ext/lib/libwfduibcsinkinterface.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libwfduibcsinkinterface.so \
     vendor/xiaomi/miatoll/proprietary/system_ext/lib/libwfduibcsrc.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libwfduibcsrc.so \
     vendor/xiaomi/miatoll/proprietary/system_ext/lib/libwfduibcsrcinterface.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libwfduibcsrcinterface.so \
+    vendor/xiaomi/miatoll/proprietary/system_ext/lib/vendor.qti.hardware.audiohalext@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.qti.hardware.audiohalext@1.0.so \
     vendor/xiaomi/miatoll/proprietary/system_ext/lib/vendor.qti.hardware.wifidisplaysession@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.qti.hardware.wifidisplaysession@1.0.so \
     vendor/xiaomi/miatoll/proprietary/system_ext/lib64/com.qualcomm.qti.dpm.api@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/com.qualcomm.qti.dpm.api@1.0.so \
     vendor/xiaomi/miatoll/proprietary/system_ext/lib64/com.qualcomm.qti.imscmservice@2.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/com.qualcomm.qti.imscmservice@2.0.so \
@@ -106,6 +107,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/miatoll/proprietary/system_ext/lib64/libwfduibcsinkinterface.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libwfduibcsinkinterface.so \
     vendor/xiaomi/miatoll/proprietary/system_ext/lib64/libwfduibcsrc.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libwfduibcsrc.so \
     vendor/xiaomi/miatoll/proprietary/system_ext/lib64/libwfduibcsrcinterface.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libwfduibcsrcinterface.so \
+    vendor/xiaomi/miatoll/proprietary/system_ext/lib64/vendor.qti.hardware.audiohalext@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.hardware.audiohalext@1.0.so \
     vendor/xiaomi/miatoll/proprietary/system_ext/lib64/vendor.qti.diaghal@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.diaghal@1.0.so \
     vendor/xiaomi/miatoll/proprietary/system_ext/lib64/vendor.qti.hardware.radio.ims@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.hardware.radio.ims@1.0.so \
     vendor/xiaomi/miatoll/proprietary/system_ext/lib64/vendor.qti.hardware.radio.ims@1.1.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.hardware.radio.ims@1.1.so \
@@ -414,7 +416,9 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/miatoll/proprietary/vendor/lib/hw/android.hardware.gatekeeper@1.0-impl-qti.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/android.hardware.gatekeeper@1.0-impl-qti.so \
     vendor/xiaomi/miatoll/proprietary/vendor/lib/hw/android.hardware.gnss@2.1-impl-qti.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/android.hardware.gnss@2.1-impl-qti.so \
     vendor/xiaomi/miatoll/proprietary/vendor/lib/hw/audio.bluetooth_qti.default.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/audio.bluetooth_qti.default.so \
+    vendor/xiaomi/miatoll/proprietary/vendor/lib/hw/audio.primary.atoll.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/audio.primary.atoll.so \
     vendor/xiaomi/miatoll/proprietary/vendor/lib/hw/consumerir.atoll.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/consumerir.atoll.so \
+    vendor/xiaomi/miatoll/proprietary/vendor/lib/hw/vendor.qti.hardware.audiohalext@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/vendor.qti.hardware.audiohalext@1.0-impl.so \
     vendor/xiaomi/miatoll/proprietary/vendor/lib/hw/vendor.qti.gnss@4.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/vendor.qti.gnss@4.0-impl.so \
     vendor/xiaomi/miatoll/proprietary/vendor/lib/hw/vendor.qti.hardware.alarm@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/vendor.qti.hardware.alarm@1.0-impl.so \
     vendor/xiaomi/miatoll/proprietary/vendor/lib/hw/vendor.qti.hardware.bluetooth_audio@2.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/vendor.qti.hardware.bluetooth_audio@2.0-impl.so \
@@ -475,9 +479,15 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/miatoll/proprietary/vendor/lib/libaudcal.so:$(TARGET_COPY_OUT_VENDOR)/lib/libaudcal.so \
     vendor/xiaomi/miatoll/proprietary/vendor/lib/libaudioconfigstore.so:$(TARGET_COPY_OUT_VENDOR)/lib/libaudioconfigstore.so \
     vendor/xiaomi/miatoll/proprietary/vendor/lib/libaudioparsers.so:$(TARGET_COPY_OUT_VENDOR)/lib/libaudioparsers.so \
+    vendor/xiaomi/miatoll/proprietary/vendor/lib/liba2dpoffload.so:$(TARGET_COPY_OUT_VENDOR)/lib/liba2dpoffload.so \
+    vendor/xiaomi/miatoll/proprietary/vendor/lib/libaudio_log_utils.so:$(TARGET_COPY_OUT_VENDOR)/lib/libaudio_log_utils.so \
+    vendor/xiaomi/miatoll/proprietary/vendor/lib/libaudioalsa.so:$(TARGET_COPY_OUT_VENDOR)/lib/libaudioalsa.so \
+    vendor/xiaomi/miatoll/proprietary/vendor/lib/libbatterylistener.so:$(TARGET_COPY_OUT_VENDOR)/lib/libbatterylistener.so \
     vendor/xiaomi/miatoll/proprietary/vendor/lib/libbatching.so:$(TARGET_COPY_OUT_VENDOR)/lib/libbatching.so \
     vendor/xiaomi/miatoll/proprietary/vendor/lib/libbluetooth_audio_session_qti.so:$(TARGET_COPY_OUT_VENDOR)/lib/libbluetooth_audio_session_qti.so \
     vendor/xiaomi/miatoll/proprietary/vendor/lib/libbtnv.so:$(TARGET_COPY_OUT_VENDOR)/lib/libbtnv.so \
+    vendor/xiaomi/miatoll/proprietary/vendor/lib/libcirrusspkrprot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcirrusspkrprot.so \
+    vendor/xiaomi/miatoll/proprietary/vendor/lib/libcomprcapture.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcomprcapture.so \
     vendor/xiaomi/miatoll/proprietary/vendor/lib/libc2d30_bltlib.so:$(TARGET_COPY_OUT_VENDOR)/lib/libc2d30_bltlib.so \
     vendor/xiaomi/miatoll/proprietary/vendor/lib/libcacertclient.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcacertclient.so \
     vendor/xiaomi/miatoll/proprietary/vendor/lib/libcapiv2svacnn.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcapiv2svacnn.so \
@@ -505,6 +515,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/miatoll/proprietary/vendor/lib/libdsd2pcm.so:$(TARGET_COPY_OUT_VENDOR)/lib/libdsd2pcm.so \
     vendor/xiaomi/miatoll/proprietary/vendor/lib/libdsi_netctrl.so:$(TARGET_COPY_OUT_VENDOR)/lib/libdsi_netctrl.so \
     vendor/xiaomi/miatoll/proprietary/vendor/lib/libdsutils.so:$(TARGET_COPY_OUT_VENDOR)/lib/libdsutils.so \
+    vendor/xiaomi/miatoll/proprietary/vendor/lib/libexthwplugin.so:$(TARGET_COPY_OUT_VENDOR)/lib/libexthwplugin.so \
     vendor/xiaomi/miatoll/proprietary/vendor/lib/libgarden.so:$(TARGET_COPY_OUT_VENDOR)/lib/libgarden.so \
     vendor/xiaomi/miatoll/proprietary/vendor/lib/libgcs-calwrapper.so:$(TARGET_COPY_OUT_VENDOR)/lib/libgcs-calwrapper.so \
     vendor/xiaomi/miatoll/proprietary/vendor/lib/libgcs-ipc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libgcs-ipc.so \
@@ -516,6 +527,8 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/miatoll/proprietary/vendor/lib/libgps.utils.so:$(TARGET_COPY_OUT_VENDOR)/lib/libgps.utils.so \
     vendor/xiaomi/miatoll/proprietary/vendor/lib/libgpudataproducer.so:$(TARGET_COPY_OUT_VENDOR)/lib/libgpudataproducer.so \
     vendor/xiaomi/miatoll/proprietary/vendor/lib/libgsl.so:$(TARGET_COPY_OUT_VENDOR)/lib/libgsl.so \
+    vendor/xiaomi/miatoll/proprietary/vendor/lib/libhdmiedid.so:$(TARGET_COPY_OUT_VENDOR)/lib/libhdmiedid.so \
+    vendor/xiaomi/miatoll/proprietary/vendor/lib/libhfp.so:$(TARGET_COPY_OUT_VENDOR)/lib/libhfp.so \
     vendor/xiaomi/miatoll/proprietary/vendor/lib/libhdmipassthru.so:$(TARGET_COPY_OUT_VENDOR)/lib/libhdmipassthru.so \
     vendor/xiaomi/miatoll/proprietary/vendor/lib/libhdr_tm.so:$(TARGET_COPY_OUT_VENDOR)/lib/libhdr_tm.so \
     vendor/xiaomi/miatoll/proprietary/vendor/lib/libhta_hexagon_runtime.so:$(TARGET_COPY_OUT_VENDOR)/lib/libhta_hexagon_runtime.so \
@@ -591,6 +604,9 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/miatoll/proprietary/vendor/lib/libril-qcril-hook-oem.so:$(TARGET_COPY_OUT_VENDOR)/lib/libril-qcril-hook-oem.so \
     vendor/xiaomi/miatoll/proprietary/vendor/lib/librilqmiservices.so:$(TARGET_COPY_OUT_VENDOR)/lib/librilqmiservices.so \
     vendor/xiaomi/miatoll/proprietary/vendor/lib/librpmb.so:$(TARGET_COPY_OUT_VENDOR)/lib/librpmb.so \
+    vendor/xiaomi/miatoll/proprietary/vendor/lib/libsndmonitor.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsndmonitor.so \
+    vendor/xiaomi/miatoll/proprietary/vendor/lib/libspkrprot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libspkrprot.so \
+    vendor/xiaomi/miatoll/proprietary/vendor/lib/libssrec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libssrec.so \
     vendor/xiaomi/miatoll/proprietary/vendor/lib/libsdedrm.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsdedrm.so \
     vendor/xiaomi/miatoll/proprietary/vendor/lib/libsdm-color.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsdm-color.so \
     vendor/xiaomi/miatoll/proprietary/vendor/lib/libsdm-colormgr-algo.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsdm-colormgr-algo.so \
@@ -663,9 +679,9 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/miatoll/proprietary/vendor/lib/rfsa/adsp/misound_res.bin:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/misound_res.bin \
     vendor/xiaomi/miatoll/proprietary/vendor/lib/rfsa/adsp/tas25xx_TI_0.bin:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/tas25xx_TI_0.bin \
     vendor/xiaomi/miatoll/proprietary/vendor/lib/soundfx/libasphere.so:$(TARGET_COPY_OUT_VENDOR)/lib/soundfx/libasphere.so \
-    vendor/xiaomi/miatoll/proprietary/vendor/lib/soundfx/libqcbassboost.so:$(TARGET_COPY_OUT_VENDOR)/lib/soundfx/libqcbassboost.so \
-    vendor/xiaomi/miatoll/proprietary/vendor/lib/soundfx/libqcreverb.so:$(TARGET_COPY_OUT_VENDOR)/lib/soundfx/libqcreverb.so \
-    vendor/xiaomi/miatoll/proprietary/vendor/lib/soundfx/libqcvirt.so:$(TARGET_COPY_OUT_VENDOR)/lib/soundfx/libqcvirt.so \
+    vendor/xiaomi/miatoll/proprietary/vendor/lib/soundfx/libqcompostprocbundle.so:$(TARGET_COPY_OUT_VENDOR)/lib/soundfx/libqcompostprocbundle.so \
+    vendor/xiaomi/miatoll/proprietary/vendor/lib/soundfx/libqcomvisualizer.so:$(TARGET_COPY_OUT_VENDOR)/lib/soundfx/libqcomvisualizer.so \
+    vendor/xiaomi/miatoll/proprietary/vendor/lib/soundfx/libqcomvoiceprocessing.so:$(TARGET_COPY_OUT_VENDOR)/lib/soundfx/libqcomvoiceprocessing.so \
     vendor/xiaomi/miatoll/proprietary/vendor/lib/soundfx/libshoebox.so:$(TARGET_COPY_OUT_VENDOR)/lib/soundfx/libshoebox.so \
     vendor/xiaomi/miatoll/proprietary/vendor/lib/unnhal-acc-hta.so:$(TARGET_COPY_OUT_VENDOR)/lib/unnhal-acc-hta.so \
     vendor/xiaomi/miatoll/proprietary/vendor/lib/vendor.display.color@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.display.color@1.0.so \
@@ -673,6 +689,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/miatoll/proprietary/vendor/lib/vendor.display.color@1.2.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.display.color@1.2.so \
     vendor/xiaomi/miatoll/proprietary/vendor/lib/vendor.display.color@1.3.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.display.color@1.3.so \
     vendor/xiaomi/miatoll/proprietary/vendor/lib/vendor.display.postproc@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.display.postproc@1.0.so \
+    vendor/xiaomi/miatoll/proprietary/vendor/lib/vendor.qti.hardware.audiohalext@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.audiohalext@1.0.so \
     vendor/xiaomi/miatoll/proprietary/vendor/lib/vendor.qti.data.factory@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.data.factory@2.0.so \
     vendor/xiaomi/miatoll/proprietary/vendor/lib/vendor.qti.data.factory@2.1.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.data.factory@2.1.so \
     vendor/xiaomi/miatoll/proprietary/vendor/lib/vendor.qti.data.slm@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.data.slm@1.0.so \
@@ -884,11 +901,13 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/miatoll/proprietary/vendor/lib64/hw/android.hardware.gatekeeper@1.0-impl-qti.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/android.hardware.gatekeeper@1.0-impl-qti.so \
     vendor/xiaomi/miatoll/proprietary/vendor/lib64/hw/android.hardware.gnss@2.1-impl-qti.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/android.hardware.gnss@2.1-impl-qti.so \
     vendor/xiaomi/miatoll/proprietary/vendor/lib64/hw/audio.bluetooth_qti.default.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/audio.bluetooth_qti.default.so \
+    vendor/xiaomi/miatoll/proprietary/vendor/lib64/hw/audio.primary.atoll.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/audio.primary.atoll.so \
     vendor/xiaomi/miatoll/proprietary/vendor/lib64/hw/camera.qcom.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/camera.qcom.so \
     vendor/xiaomi/miatoll/proprietary/vendor/lib64/hw/com.qti.chi.override.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/com.qti.chi.override.so \
     vendor/xiaomi/miatoll/proprietary/vendor/lib64/hw/consumerir.atoll.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/consumerir.atoll.so \
     vendor/xiaomi/miatoll/proprietary/vendor/lib64/hw/fingerprint.fpc.default.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/fingerprint.fpc.default.so \
     vendor/xiaomi/miatoll/proprietary/vendor/lib64/hw/fingerprint.goodix.default.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/fingerprint.goodix.default.so \
+    vendor/xiaomi/miatoll/proprietary/vendor/lib64/hw/vendor.qti.hardware.audiohalext@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vendor.qti.hardware.audiohalext@1.0-impl.so \
     vendor/xiaomi/miatoll/proprietary/vendor/lib64/hw/vendor.qti.gnss@4.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vendor.qti.gnss@4.0-impl.so \
     vendor/xiaomi/miatoll/proprietary/vendor/lib64/hw/vendor.qti.hardware.alarm@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vendor.qti.hardware.alarm@1.0-impl.so \
     vendor/xiaomi/miatoll/proprietary/vendor/lib64/hw/vendor.qti.hardware.bluetooth_audio@2.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vendor.qti.hardware.bluetooth_audio@2.0-impl.so \
@@ -972,12 +991,18 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/miatoll/proprietary/vendor/lib64/libaudcal.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libaudcal.so \
     vendor/xiaomi/miatoll/proprietary/vendor/lib64/libaudioconfigstore.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libaudioconfigstore.so \
     vendor/xiaomi/miatoll/proprietary/vendor/lib64/libaudioparsers.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libaudioparsers.so \
+    vendor/xiaomi/miatoll/proprietary/vendor/lib64/liba2dpoffload.so:$(TARGET_COPY_OUT_VENDOR)/lib64/liba2dpoffload.so \
+    vendor/xiaomi/miatoll/proprietary/vendor/lib64/libaudio_log_utils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libaudio_log_utils.so \
+    vendor/xiaomi/miatoll/proprietary/vendor/lib64/libaudioalsa.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libaudioalsa.so \
+    vendor/xiaomi/miatoll/proprietary/vendor/lib64/libbatterylistener.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libbatterylistener.so \
     vendor/xiaomi/miatoll/proprietary/vendor/lib64/libbatching.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libbatching.so \
     vendor/xiaomi/miatoll/proprietary/vendor/lib64/libbeauty_face_interface.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libbeauty_face_interface.so \
     vendor/xiaomi/miatoll/proprietary/vendor/lib64/libbluetooth_audio_session_qti.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libbluetooth_audio_session_qti.so \
     vendor/xiaomi/miatoll/proprietary/vendor/lib64/libbtnv.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libbtnv.so \
     vendor/xiaomi/miatoll/proprietary/vendor/lib64/libc++_shared.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libc++_shared.so \
     vendor/xiaomi/miatoll/proprietary/vendor/lib64/libc2d30_bltlib.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libc2d30_bltlib.so \
+    vendor/xiaomi/miatoll/proprietary/vendor/lib64/libcirrusspkrprot.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcirrusspkrprot.so \
+    vendor/xiaomi/miatoll/proprietary/vendor/lib64/libcomprcapture.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcomprcapture.so \
     vendor/xiaomi/miatoll/proprietary/vendor/lib64/libcacertclient.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcacertclient.so \
     vendor/xiaomi/miatoll/proprietary/vendor/lib64/libcamera_dirty.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcamera_dirty.so \
     vendor/xiaomi/miatoll/proprietary/vendor/lib64/libcamera_nn_stub.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcamera_nn_stub.so \
@@ -1013,6 +1038,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/miatoll/proprietary/vendor/lib64/libdrmtime.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdrmtime.so \
     vendor/xiaomi/miatoll/proprietary/vendor/lib64/libdsi_netctrl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdsi_netctrl.so \
     vendor/xiaomi/miatoll/proprietary/vendor/lib64/libdsutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdsutils.so \
+    vendor/xiaomi/miatoll/proprietary/vendor/lib64/libexthwplugin.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libexthwplugin.so \
     vendor/xiaomi/miatoll/proprietary/vendor/lib64/libfastcvdsp_stub.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libfastcvdsp_stub.so \
     vendor/xiaomi/miatoll/proprietary/vendor/lib64/libfastcvopt.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libfastcvopt.so \
     vendor/xiaomi/miatoll/proprietary/vendor/lib64/libft2vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libft2vendor.so \
@@ -1027,6 +1053,8 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/miatoll/proprietary/vendor/lib64/libgps.utils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libgps.utils.so \
     vendor/xiaomi/miatoll/proprietary/vendor/lib64/libgpudataproducer.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libgpudataproducer.so \
     vendor/xiaomi/miatoll/proprietary/vendor/lib64/libgsl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libgsl.so \
+    vendor/xiaomi/miatoll/proprietary/vendor/lib64/libhdmiedid.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libhdmiedid.so \
+    vendor/xiaomi/miatoll/proprietary/vendor/lib64/libhfp.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libhfp.so \
     vendor/xiaomi/miatoll/proprietary/vendor/lib64/libhdmipassthru.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libhdmipassthru.so \
     vendor/xiaomi/miatoll/proprietary/vendor/lib64/libhdr_tm.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libhdr_tm.so \
     vendor/xiaomi/miatoll/proprietary/vendor/lib64/libhexagon_nn_stub.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libhexagon_nn_stub.so \
@@ -1114,6 +1142,9 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/miatoll/proprietary/vendor/lib64/libril-qcril-hook-oem.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libril-qcril-hook-oem.so \
     vendor/xiaomi/miatoll/proprietary/vendor/lib64/librilqmiservices.so:$(TARGET_COPY_OUT_VENDOR)/lib64/librilqmiservices.so \
     vendor/xiaomi/miatoll/proprietary/vendor/lib64/librpmb.so:$(TARGET_COPY_OUT_VENDOR)/lib64/librpmb.so \
+    vendor/xiaomi/miatoll/proprietary/vendor/lib64/libsndmonitor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsndmonitor.so \
+    vendor/xiaomi/miatoll/proprietary/vendor/lib64/libspkrprot.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libspkrprot.so \
+    vendor/xiaomi/miatoll/proprietary/vendor/lib64/libssrec.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libssrec.so \
     vendor/xiaomi/miatoll/proprietary/vendor/lib64/libsdedrm.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsdedrm.so \
     vendor/xiaomi/miatoll/proprietary/vendor/lib64/libsdk_sr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsdk_sr.so \
     vendor/xiaomi/miatoll/proprietary/vendor/lib64/libsdm-color.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsdm-color.so \
@@ -1161,9 +1192,9 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/miatoll/proprietary/vendor/lib64/rfsa/adsp/libsns_low_lat_stream_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib64/rfsa/adsp/libsns_low_lat_stream_skel.so \
     vendor/xiaomi/miatoll/proprietary/vendor/lib64/sensors.ssc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/sensors.ssc.so \
     vendor/xiaomi/miatoll/proprietary/vendor/lib64/soundfx/libasphere.so:$(TARGET_COPY_OUT_VENDOR)/lib64/soundfx/libasphere.so \
-    vendor/xiaomi/miatoll/proprietary/vendor/lib64/soundfx/libqcbassboost.so:$(TARGET_COPY_OUT_VENDOR)/lib64/soundfx/libqcbassboost.so \
-    vendor/xiaomi/miatoll/proprietary/vendor/lib64/soundfx/libqcreverb.so:$(TARGET_COPY_OUT_VENDOR)/lib64/soundfx/libqcreverb.so \
-    vendor/xiaomi/miatoll/proprietary/vendor/lib64/soundfx/libqcvirt.so:$(TARGET_COPY_OUT_VENDOR)/lib64/soundfx/libqcvirt.so \
+    vendor/xiaomi/miatoll/proprietary/vendor/lib64/soundfx/libqcompostprocbundle.so:$(TARGET_COPY_OUT_VENDOR)/lib64/soundfx/libqcompostprocbundle.so \
+    vendor/xiaomi/miatoll/proprietary/vendor/lib64/soundfx/libqcomvisualizer.so:$(TARGET_COPY_OUT_VENDOR)/lib64/soundfx/libqcomvisualizer.so \
+    vendor/xiaomi/miatoll/proprietary/vendor/lib64/soundfx/libqcomvoiceprocessing.so:$(TARGET_COPY_OUT_VENDOR)/lib64/soundfx/libqcomvoiceprocessing.so \
     vendor/xiaomi/miatoll/proprietary/vendor/lib64/soundfx/libshoebox.so:$(TARGET_COPY_OUT_VENDOR)/lib64/soundfx/libshoebox.so \
     vendor/xiaomi/miatoll/proprietary/vendor/lib64/unnhal-acc-adreno.so:$(TARGET_COPY_OUT_VENDOR)/lib64/unnhal-acc-adreno.so \
     vendor/xiaomi/miatoll/proprietary/vendor/lib64/unnhal-acc-common.so:$(TARGET_COPY_OUT_VENDOR)/lib64/unnhal-acc-common.so \
@@ -1174,6 +1205,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/miatoll/proprietary/vendor/lib64/vendor.display.color@1.2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.display.color@1.2.so \
     vendor/xiaomi/miatoll/proprietary/vendor/lib64/vendor.display.color@1.3.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.display.color@1.3.so \
     vendor/xiaomi/miatoll/proprietary/vendor/lib64/vendor.display.postproc@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.display.postproc@1.0.so \
+    vendor/xiaomi/miatoll/proprietary/vendor/lib64/vendor.qti.hardware.audiohalext@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.audiohalext@1.0.so \
     vendor/xiaomi/miatoll/proprietary/vendor/lib64/vendor.qti.data.factory@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.data.factory@2.0.so \
     vendor/xiaomi/miatoll/proprietary/vendor/lib64/vendor.qti.data.factory@2.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.data.factory@2.1.so \
     vendor/xiaomi/miatoll/proprietary/vendor/lib64/vendor.qti.data.slm@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.data.slm@1.0.so \
