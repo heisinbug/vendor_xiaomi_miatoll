@@ -1410,6 +1410,7 @@ PRODUCT_PACKAGES += \
     HotwordEnrollmentXGoogleHEXAGON \
     dpmserviceapp \
     ims \
+    PowerOffAlarm \
     qcrilmsgtunnel \
     WfdCommon \
     android.hardware.gnss@2.1-service-qti \
